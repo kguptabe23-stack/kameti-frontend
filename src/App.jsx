@@ -180,6 +180,7 @@ const makeCSS = (T) => `
   .k-da a{color:${T.muted};transition:color .15s;}
   .k-da a:hover{color:${T.green};}
   @media(prefers-reduced-motion:reduce){.k-ticker-inner,.k-pill-dot{animation:none;}}
+  @media(max-width:768px){.k-app{flex-direction:column;}.k-sidebar{width:100%;height:auto;position:relative;border-right:none;border-bottom:1px solid rgba(255,255,255,0.08);}.k-logo-wrap{padding:14px 16px;}.k-nav{flex-direction:row;padding:8px 10px;overflow-x:auto;gap:4px;flex:unset;}.k-nav-label{display:none;}.k-nav-item{padding:8px 10px;font-size:12px;white-space:nowrap;border-radius:7px;}.k-wallet-box{display:none;}.k-page{padding:16px 14px;}.k-stats{grid-template-columns:repeat(2,1fr);}.k-pool-grid{grid-template-columns:1fr;}.k-fr{grid-template-columns:1fr;}.k-sum-grid{grid-template-columns:1fr;}.k-cc{padding:32px 20px;max-width:100%;margin:0 16px;}.k-banner{flex-wrap:wrap;}.k-banner-val{margin-left:0;width:100%;margin-top:8px;}.k-page-title{font-size:18px;}.k-stat-val{font-size:18px;}.k-btn{font-size:12.5px;padding:9px 14px;}.k-sec-hd{flex-wrap:wrap;gap:8px;}}
 `;
 
 const fmtUSDC   = (n) => `₹${Number(formatUnits(n || 0n, 6)).toLocaleString("en-IN")}`;
